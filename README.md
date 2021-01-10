@@ -1,2 +1,2 @@
 # nvim
-Neovim plugins general configurations
+Neovim plugins and general configurations
