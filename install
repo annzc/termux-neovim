@@ -11,6 +11,7 @@ echo -e "\e[93m
 \e[0m"
 read
 
+apt install neovim -y
 apt install python nodejs -y
 apt install python-pip -y
 python -m pip install --upgrade pip
