@@ -7,6 +7,7 @@ echo -e "\e[93m
  |  Neovim text editor on Termux 🤗   |
  ╰────────────────────────────────────╯
 \e[97m
+ This will take a while, depends on your network speed
  hit <ENTER> to continue.
 \e[0m"
 read
@@ -29,5 +30,6 @@ Successfully installed the dependencies!
 Now you're ready to go! 
 Type 'v' to try.
 
-\e[93mNOTE: It will automatically install plugins on the first run, after that you can install any plugins manually by typing :CocInstall <coc-plugins>
+\e[93mNOTE: It will automatically install plugins on the first run. 
+After that you can install any completion-plugins manually by typing :CocInstall <coc-plugins>
 "
