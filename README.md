@@ -10,7 +10,7 @@ $ git clone https://github.com/annzc/termux-neovim.git
 ```
 enter the cloned repo:
 ```bash
-$ cd nvim
+$ cd termux-neovim
 $ chmod +x install
 ```
 then run install script by typing:
