@@ -1,3 +1,8 @@
+
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  autocmd VimEnter * PlugInstall
+endif
+
 call plug#begin('~/.config/nvim/plugs')
 
     " Themes
@@ -10,7 +15,7 @@ call plug#begin('~/.config/nvim/plugs')
     Plug 'neoclide/coc.nvim'
     Plug 'jiangmiao/auto-pairs'
     " Statusline theme
-    Plug 'vim-airline/vim-airline'
+    " Plug 'vim-airline/vim-airline'
     Plug 'itchyny/lightline.vim'
 
     " syntax highlighting
@@ -24,3 +29,8 @@ call plug#begin('~/.config/nvim/plugs')
 
 call plug#end()
 
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
