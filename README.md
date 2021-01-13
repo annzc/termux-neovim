@@ -6,7 +6,7 @@ using [vim-plug](https://github.com/junegunn/vim-plug)
 ## Installation
 clone this repo:
 ```bash
-$ git clone https://github.com/annzc/nvim.git
+$ git clone https://github.com/annzc/termux-neovim.git
 ```
 enter the cloned repo:
 ```bash
