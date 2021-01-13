@@ -3,6 +3,8 @@ Neovim plugins and general configurations<br>
 using [vim-plug](https://github.com/junegunn/vim-plug)
  plugin manager.
 
+<img src="https://i.ibb.co/jgmVv8j/Screenshot-2021-01-13-17-40-58-626-com-termux.jpg">
+
 ## Installation
 clone this repo:
 ```bash
