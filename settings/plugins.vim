@@ -30,6 +30,7 @@ call plug#begin('~/.config/nvim/plugs')
 call plug#end()
 
 " Automatically install missing plugins on startup
+" BTW I copaste this from ChristianChiarulli/nvim
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
