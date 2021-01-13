@@ -1,0 +1,32 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo -e "\e[93m
+ ╭────────────────────────────────────╮
+ |  This  script  will  install  all  |
+ |  the requirements for installing   |
+ |  Neovim text editor on Termux 🤗   |
+ ╰────────────────────────────────────╯
+\e[97m
+ hit <ENTER> to continue.
+\e[0m"
+read
+
+apt install python nodejs -y
+apt install python-pip -y
+python -m pip install --upgrade pip
+python -m pip install pynvim pylint jedi
+npm i -g npm
+npm i -g neovim
+mkdir -p $HOME/.config/nvim
+cp -r * $HOME/.config/nvim
+rm $HOME/.config/nvim/install
+ln -s $HOME/../usr/bin/nvim $HOME/../usr/bin/v 
+
+
+echo -e "\e[92m
+Successfully installed the dependencies!
+Now you're ready to go! 
+Type 'v' to try.
+
+\e[93mNOTE: It will automatically install plugins on the first run, after that you can install any plugins manually by typing :CocInstall <coc-plugins>
+"
