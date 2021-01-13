@@ -2,6 +2,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 syntax enable
 
+set noshowmode
 set noswapfile
 set tabstop=4
 set softtabstop=4
