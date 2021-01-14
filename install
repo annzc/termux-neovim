@@ -31,6 +31,6 @@ Successfully installed the dependencies!
 Now you're ready to go! 
 Type 'v' to try.
 
-\e[93mNOTE: It will automatically install the plugins on the first run. 
+\e[93mNOTE: It will automatically install the plugins on the first run. Then restart neovim...
 After that you can install any completion-plugins manually by typing :CocInstall <coc-plugins>
 "
