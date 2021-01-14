@@ -19,6 +19,7 @@ python -m pip install --upgrade pip
 python -m pip install pynvim pylint jedi
 npm i -g npm
 npm i -g neovim
+mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install
@@ -30,6 +31,6 @@ Successfully installed the dependencies!
 Now you're ready to go! 
 Type 'v' to try.
 
-\e[93mNOTE: It will automatically install plugins on the first run. 
+\e[93mNOTE: It will automatically install the plugins on the first run. 
 After that you can install any completion-plugins manually by typing :CocInstall <coc-plugins>
 "
