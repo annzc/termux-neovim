@@ -20,6 +20,7 @@ then run install script by typing:
 $ ./install
 ```
 Wait the installation proccess, and pray, hope it will not throw any error.
-
+### NOTE:
+You can change the theme in <code>settings/themes.vim</code>
 ### was inspired by:
 [ChristianChiarulli/nvim](https://github.com/ChristianChiarulli/nvim)
