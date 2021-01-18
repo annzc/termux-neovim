@@ -15,8 +15,12 @@ read
 apt install neovim python nodejs -y
 apt install neovim python nodejs -y
 apt install python-pip -y
+echo preparing pip...please wait
 python -m pip install --upgrade pip
 python -m pip install pynvim pylint jedi
+echo 
+echo Almost done.. be patient!
+echo preparing npm for coc.nvim:
 npm i -g npm
 npm i -g neovim
 mv $HOME/.config/nvim $HOME/.config/nvim.old
