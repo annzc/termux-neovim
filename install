@@ -12,8 +12,8 @@ echo -e "\e[93m
 \e[0m"
 read
 
-apt install neovim python nodejs -y
-apt install neovim python nodejs -y
+apt install neovim python nodejs clangd -y
+apt install neovim python nodejs clangd -y
 apt install python-pip -y
 echo preparing pip...please wait
 python -m pip install --upgrade pip
@@ -23,11 +23,13 @@ echo Almost done.. be patient!
 echo preparing npm for coc.nvim:
 npm i -g npm
 npm i -g neovim
+npm i coc-python coc-marketplace coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install
-ln -s $HOME/../usr/bin/nvim $HOME/../usr/bin/v 
+ln -s $HOME/../usr/bin/nvim $HOME/../usr/bin/v
+nvim --headless +PlugInstall +qall > /dev/null 2>&1
 
 
 echo -e "\e[92m
