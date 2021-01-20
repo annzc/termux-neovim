@@ -21,6 +21,7 @@ $ ./install
 ```
 Wait the installation proccess, and pray, hope it will not throw any error.
 ### NOTE:
-You can change the theme in <code>settings/themes.vim</code>
+* You can change the theme in <code>settings/themes.vim</code>
+* Install completion plugins manually with [coc.nvim](https://github.com/neoclide/coc.nvim)
 ### was inspired by:
 [ChristianChiarulli/nvim](https://github.com/ChristianChiarulli/nvim)
