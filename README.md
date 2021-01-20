@@ -1,4 +1,4 @@
-# Neovim Text Editor
+# Neovim on Termux
 Neovim plugins and general configurations<br>
 using [vim-plug](https://github.com/junegunn/vim-plug)
  plugin manager.
