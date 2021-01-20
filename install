@@ -23,7 +23,6 @@ echo Almost done.. be patient!
 echo preparing npm for coc.nvim:
 npm i -g npm
 npm i -g neovim
-npm i coc-python coc-marketplace coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
