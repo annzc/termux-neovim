@@ -19,7 +19,7 @@ then run install script by typing:
 ```bash
 $ ./install
 ```
-Wait the installation proccess, and pray, hope it will not throw any error.
+Wait the installation proccess, and pray, hope it will not throw any errors.
 ### NOTE:
 * You can change the theme in <code>settings/themes.vim</code>
 * Install completion plugins manually with [coc.nvim](https://github.com/neoclide/coc.nvim)
