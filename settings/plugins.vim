@@ -13,12 +13,16 @@ call plug#begin('~/.config/nvim/plugs')
 
     " VS Code like
     Plug 'neoclide/coc.nvim'
+
+    " auto pairs for (), [], "", '', {}
     Plug 'jiangmiao/auto-pairs'
+
     " Statusline theme
-    " Plug 'vim-airline/vim-airline'
-    Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
+    "Plug 'itchyny/lightline.vim'
 
     " syntax highlighting
+    "Plug 'scrooloose/syntastic'
     Plug 'sheerun/vim-polyglot'
 
     " FUZZY FINDER
@@ -27,11 +31,14 @@ call plug#begin('~/.config/nvim/plugs')
     " NERDTree file explorer
     Plug 'preservim/nerdtree'
 
+    " 
+    Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " Automatically install missing plugins on startup
-" BTW I copaste this from ChristianChiarulli/nvim
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
