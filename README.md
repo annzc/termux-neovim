@@ -18,6 +18,8 @@ $ chmod +x install
 then run install script by typing:
 ```bash
 $ ./install
+# or 
+$ bash install
 ```
 Wait the installation proccess, and pray, hope it will not throw any errors.
 ### NOTE:
