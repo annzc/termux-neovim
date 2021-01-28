@@ -31,7 +31,7 @@ call plug#begin('~/.config/nvim/plugs')
     " NERDTree file explorer
     Plug 'preservim/nerdtree'
 
-    " 
+    " Dev icons for files and folders
     Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
