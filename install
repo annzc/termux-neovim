@@ -24,7 +24,6 @@ mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install
-ln -s $HOME/../usr/bin/nvim $HOME/../usr/bin/v
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
 
 
