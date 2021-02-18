@@ -9,19 +9,20 @@ set noswapfile
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set nowrap
+set wrap
 
 " tab handling
 set expandtab
 set smarttab
 set autoindent
+set smartindent
 set backspace=indent,eol,start
 
-" disable autocomment
-set formatoptions-=cro
-
 " mouse support
-set mouse=a
+" set mouse=a
+
+" support system clipboard
+set clipboard+=unnamedplus
 
 " decor
 set relativenumber
@@ -38,7 +39,7 @@ vmap <C-s> <esc>:w<cr>
 imap <C-s> <esc>:w<cr>
 
 " Highlight search dissapeared
-nmap <esc> :nohl<cr>
+nnoremap <silent><esc> <esc>:noh<cr>
 
 " new line in insert mode
 imap <A-m> <esc>o

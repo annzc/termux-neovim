@@ -12,26 +12,22 @@ echo -e "\e[93m
 \e[0m"
 read
 
-apt install neovim python nodejs -y
-apt install neovim python nodejs -y
-echo preparing pip...please wait
-python -m pip install pynvim pylint jedi
-echo 
-echo Almost done.. be patient!
-echo preparing npm for coc.nvim:
+apt install neovim nodejs -y
+apt install neovim nodejs -y
+echo -e "\e[92mAlmost done.. be patient!"
+echo -e "\e[93mpreparing npm for coc.nvim:\e[0m"
 npm i -g neovim
 mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install
+echo -e "\e[92mInstalling plugins...\e[0m"
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
 
 
 echo -e "\e[92m
 Successfully installed the dependencies!
-Now you're ready to go! 
-Type 'v' to try.
+Now you're ready to go!
 
-\e[93mNOTE: It will automatically install the plugins on the first run. Then restart neovim...
-After that you can install any completion-plugins manually by typing :CocInstall <coc-plugins>
+\e[93mAfter this you can install any completion-plugins manually by typing :CocInstall <coc-plugins>
 "
