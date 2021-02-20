@@ -18,9 +18,11 @@ echo -e "\e[92mAlmost done.. be patient!"
 echo -e "\e[93mpreparing npm for coc.nvim:\e[0m"
 npm i -g neovim
 mv $HOME/.config/nvim $HOME/.config/nvim.old
+mkdir -p $HOME/.termux
+cp icon-support.ttf $HOME/.termux
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
-rm $HOME/.config/nvim/install
+rm $HOME/.config/nvim/install && rm $HOME/.config/nvim/icon-support.ttf
 echo -e "\e[92mInstalling plugins...\e[0m"
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
 
