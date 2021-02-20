@@ -1,14 +1,13 @@
-
+" 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
 call plug#begin('~/.config/nvim/plugs')
-
     " Themes
+    Plug 'morhetz/gruvbox'
     Plug 'joshdick/onedark.vim'
     Plug 'bluz71/vim-nightfly-guicolors'
-    Plug 'morhetz/gruvbox'
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 
     " VS Code like
@@ -21,7 +20,7 @@ call plug#begin('~/.config/nvim/plugs')
     Plug 'vim-airline/vim-airline'
     "Plug 'itchyny/lightline.vim'
 
-    " syntax highlighting
+    " Better syntax highlighting
     "Plug 'scrooloose/syntastic'
     Plug 'sheerun/vim-polyglot'
 
