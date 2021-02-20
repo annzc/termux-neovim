@@ -25,7 +25,7 @@ cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install && rm $HOME/.config/nvim/icon-support.ttf
 echo -e "\e[92mInstalling plugins...\e[0m"
 nvim --headless +PlugInstall +qall > /dev/null 2>&1
-
+termux-reload-settings
 
 echo -e "\e[92m
 Successfully installed the dependencies!
