@@ -19,7 +19,7 @@ echo -e "\e[93mpreparing npm for coc.nvim:\e[0m"
 npm i -g neovim
 mv $HOME/.config/nvim $HOME/.config/nvim.old
 mkdir -p $HOME/.termux
-cp icon-support.ttf $HOME/.termux
+cp icon-support.ttf $HOME/.termux/font.ttf
 mkdir -p $HOME/.config/nvim
 cp -r * $HOME/.config/nvim
 rm $HOME/.config/nvim/install && rm $HOME/.config/nvim/icon-support.ttf
