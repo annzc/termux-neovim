@@ -78,35 +78,35 @@ imap <M-b> <C-left>
 " let mapleader=" "
 
 " Make ci( work like quotes do
-function! New_cib()
-    if search("(","bn") == line(".")
-        sil exe "normal! f)ci("
-        sil exe "normal! l"
-        startinsert
-    else
-        sil exe "normal! f(ci("
-        sil exe "normal! l"
-        startinsert
-    endif
-endfunction
-
-" And for curly brackets
-function! New_ciB()
-    if search("{","bn") == line(".")
-        sil exe "normal! f}ci{"
-        sil exe "normal! l"
-        startinsert
-    else
-        sil exe "normal! f{ci{"
-        sil exe "normal! l"
-        startinsert
-    endif
-endfunction
-
-nnoremap <silent>ci( :call New_cib()<CR>
-nnoremap <silent>cib :call New_cib()<CR>
-nnoremap <silent>ci{ :call New_ciB()<CR>
-nnoremap <silent>ciB :call New_ciB()<CR>
+"function! New_cib()
+"    if search("(","bn") == line(".")
+"        sil exe "normal! f)ci("
+"        sil exe "normal! l"
+"        startinsert
+"    else
+"        sil exe "normal! f(ci("
+"        sil exe "normal! l"
+"        startinsert
+"    endif
+"endfunction
+"
+"" And for curly brackets
+"function! New_ciB()
+"    if search("{","bn") == line(".")
+"        sil exe "normal! f}ci{"
+"        sil exe "normal! l"
+"        startinsert
+"    else
+"        sil exe "normal! f{ci{"
+"        sil exe "normal! l"
+"        startinsert
+"    endif
+"endfunction
+"
+"nnoremap <silent>ci( :call New_cib()<CR>
+"nnoremap <silent>cib :call New_cib()<CR>
+"nnoremap <silent>ci{ :call New_ciB()<CR>
+"nnoremap <silent>ciB :call New_ciB()<CR>
 
 " Alt-m for creating a new line in insert mode
 imap <M-m> <esc>o
