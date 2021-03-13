@@ -1,7 +1,3 @@
-" I got this statusline theme from 
-" https://github.com/owl4ce/dotfiles 
-" thanks to Mr. Harry owl4ce
-
 " ====================================================================
 " Make sure to:
 " 1. source this file somewhere at the bottom of your config.

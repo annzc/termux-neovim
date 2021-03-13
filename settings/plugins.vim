@@ -3,15 +3,15 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
-call plug#begin('~/.config/nvim/plugs')
+call plug#begin('~/.config/nvim/autoload/plugs')
 
     " Themes
     Plug 'joshdick/onedark.vim'
-    "Plug 'bluz71/vim-nightfly-guicolors'
-    "Plug 'morhetz/gruvbox'
-    "Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
+    Plug 'bluz71/vim-nightfly-guicolors'
+    Plug 'morhetz/gruvbox'
+    Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 
-    " Intellisense code editor
+    " VS Code like
     Plug 'neoclide/coc.nvim'
 
     " Auto pairs for (), [], "", '', {}
@@ -22,7 +22,7 @@ call plug#begin('~/.config/nvim/plugs')
     "Plug 'itchyny/lightline.vim'
 
     " for better syntax highlighting
-    Plug 'scrooloose/syntastic'
+    "Plug 'scrooloose/syntastic'
     Plug 'sheerun/vim-polyglot'
     Plug 'uiiaoo/java-syntax.vim'
 
@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/plugs')
     Plug 'preservim/nerdtree'
 
     " Lexima Plugin
-    Plug 'cohama/lexima.vim'
+    "Plug 'cohama/lexima.vim'
 
     " Dev icons displays file's icons 
     Plug 'ryanoasis/vim-devicons'

@@ -1,6 +1,3 @@
-" BTW I got this key mapping from:
-" https://github.com/owl4ce/dotfiles
-
 " Highlight search dissapeared
 nnoremap <silent><esc> :noh<return><esc>
 
@@ -53,10 +50,10 @@ imap <C-V> <esc>pa
 cmap <C-V> <C-r>0
 
 " Window Movement
-"nmap <M-h> <C-w>h
-"nmap <M-j> <C-w>j
-"nmap <M-k> <C-w>k
-"nmap <M-l> <C-w>l
+nmap <M-h> <C-w>h
+nmap <M-j> <C-w>j
+nmap <M-k> <C-w>k
+nmap <M-l> <C-w>l
 
 " Resizing
 nmap <C-M-H> 2<C-w><
@@ -78,35 +75,35 @@ imap <M-b> <C-left>
 " let mapleader=" "
 
 " Make ci( work like quotes do
-"function! New_cib()
-"    if search("(","bn") == line(".")
-"        sil exe "normal! f)ci("
-"        sil exe "normal! l"
-"        startinsert
-"    else
-"        sil exe "normal! f(ci("
-"        sil exe "normal! l"
-"        startinsert
-"    endif
-"endfunction
-"
-"" And for curly brackets
-"function! New_ciB()
-"    if search("{","bn") == line(".")
-"        sil exe "normal! f}ci{"
-"        sil exe "normal! l"
-"        startinsert
-"    else
-"        sil exe "normal! f{ci{"
-"        sil exe "normal! l"
-"        startinsert
-"    endif
-"endfunction
-"
-"nnoremap <silent>ci( :call New_cib()<CR>
-"nnoremap <silent>cib :call New_cib()<CR>
-"nnoremap <silent>ci{ :call New_ciB()<CR>
-"nnoremap <silent>ciB :call New_ciB()<CR>
+function! New_cib()
+    if search("(","bn") == line(".")
+        sil exe "normal! f)ci("
+        sil exe "normal! l"
+        startinsert
+    else
+        sil exe "normal! f(ci("
+        sil exe "normal! l"
+        startinsert
+    endif
+endfunction
+
+" And for curly brackets
+function! New_ciB()
+    if search("{","bn") == line(".")
+        sil exe "normal! f}ci{"
+        sil exe "normal! l"
+        startinsert
+    else
+        sil exe "normal! f{ci{"
+        sil exe "normal! l"
+        startinsert
+    endif
+endfunction
+
+nnoremap <silent>ci( :call New_cib()<CR>
+nnoremap <silent>cib :call New_cib()<CR>
+nnoremap <silent>ci{ :call New_ciB()<CR>
+nnoremap <silent>ciB :call New_ciB()<CR>
 
 " Alt-m for creating a new line in insert mode
 imap <M-m> <esc>o
@@ -128,12 +125,11 @@ cmap <M-k> <up>
 cmap <M-j> <down>
 
 " Back to normal mode from insert
-"inoremap jk <esc>
-"inoremap JK <esc>
+inoremap jk <esc>
+inoremap JK <esc>
 
 " Manually refresh file
 nmap <F5> :e!<cr>
 
-" shortcut for editing nvim configuration
 nnoremap <silent>,init :tabe ~/.config/nvim/init.vim<cr>
 nnoremap <silent>,soinit :so ~/.config/nvim/init.vim<cr>

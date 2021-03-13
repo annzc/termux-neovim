@@ -10,20 +10,11 @@ set softtabstop=4
 set shiftwidth=4
 set wrap
 
-" Tab handling for html, xml, css, js, etc
-autocmd filetype html,css,typescript,json,xml,javascript,sh setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
-
 " Highlight the line on which the cursor lives.
 set nocursorline
 
 " tab handling
-set expandtab
-set smarttab
-set autoindent
-set backspace=indent,eol,start
 
-" disable autocomment
-autocmd filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Always show at least one line above/below the cursor.
 set scrolloff=3
@@ -49,6 +40,8 @@ set notimeout
 " Indentation
 set smarttab
 set expandtab
+set autoindent
+set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -59,6 +52,12 @@ set autoindent
 
 set nocompatible
 filetype plugin indent on
+
+" Tab handling for html, xml, css, js, etc
+autocmd filetype html,css,typescript,json,xml,javascript,sh,c,gcc,cpp setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
+" disable autocomment
+autocmd filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Write buffer through sudo (works on vim but not neovim)
 " cnoreabbrev w!! w !sudo -S tee % >/dev/null
@@ -234,7 +233,7 @@ endif
 set wildmenu
 
 " Colorscheme
-"colorscheme colors
+" colorscheme colors
 set fillchars=vert:▎
 
 " Restore last cursor position and marks on open
@@ -243,7 +242,7 @@ au BufReadPost *
          \ |   exe "normal! g`\""
          \ | endif
 
-source $HOME/.config/nvim/statusline.vim
+source $HOME/.config/nvim/themes/statusline.vim
 "set guicursor=n-ci:hor30-iCursor-blinkwait300-blinkon200-blinkoff150
 
 autocmd StdinReadPre * let s:std_in=1
